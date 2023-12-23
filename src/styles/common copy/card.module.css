@@ -1,0 +1,16 @@
+.cardWrapper {
+  padding: 32px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  color: #212121;
+  border-radius: 16px;
+}
+
+.titleContainer > hr {
+  margin-top: 12px;
+  width: 32px;
+  border-color: #62d4f2;
+}
+
+.contentContainer {
+  margin-top: 16px;
+}

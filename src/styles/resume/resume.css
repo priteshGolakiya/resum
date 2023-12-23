@@ -1,0 +1,108 @@
+/* Reset Box Model */
+* {
+  box-sizing: border-box;
+}
+
+/* Root Variables */
+:root {
+  --primary-color: #34b7a7;
+  --secondary-color: #1d685f;
+  --background-color: #effbf9;
+}
+
+/* Global Styles */
+.resume {
+  font-family: "Poppins", sans-serif;
+  color: #222222;
+  margin: 30px 0;
+}
+
+.resume .resume-title {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.resume .resume-item {
+  padding: 0 0 1.25rem 1.25rem;
+  margin-top: -2px;
+  border-left: 2px solid var(--primary-color);
+  position: relative;
+}
+
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+  font-size: 1rem;
+  background: var(--background-color);
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid var(--primary-color);
+}
+
+/* Card Layout */
+.try {
+  display: flex;
+  justify-content: space-between;
+  gap: 1px;
+}
+
+.resume-left {
+  width: 49%;
+}
+
+.resume-right {
+  width: 49%;
+}
+
+/* Responsive Layout */
+@media only screen and (max-width: 768px) {
+  .try {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .resume .resume-item {
+    padding: 0 0 1.25rem 1.25rem;
+  }
+
+  .resume-left,
+  .resume-right {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}

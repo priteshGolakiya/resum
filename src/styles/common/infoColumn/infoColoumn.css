@@ -1,0 +1,28 @@
+/* Add your specific styles here */
+.info-column {
+  display: grid;
+  gap: 24px;
+}
+
+/* Style for hr element */
+.info-column hr {
+  border: 0.5px solid #ddd; /* Adjust the border color and style as needed */
+  width: 100%; /* Adjust the width as needed */
+}
+
+/* Styling for ColumnListItem */
+/* Assuming that ColumnListItem is styled in its own CSS file */
+/* You can adjust these styles based on your design */
+.column-list-item {
+  /* Add your styling for each item in the column */
+  /* For example: */
+  margin-bottom: 16px;
+}
+
+.column-list-item h2 {
+  /* Add styling for the title */
+}
+
+.column-list-item p {
+  /* Add styling for the subtitle and description */
+}

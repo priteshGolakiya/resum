@@ -1,102 +1,82 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import "../styles/layout/Navbar.css";
+import styles from "../styles/layout/Navbar.module.css";
 
-function Navbar() {
+const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenuClicked = () => {
+    document.body.classList.toggle(styles.open);
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <header className="fixed-top header">
-      <nav className="navbar navbar-expand-lg navbar-dark">
-        <div className="" style={{ display: "flex" }}>
-          <h1 className="logo me-auto me-lg-0">Bhutik</h1>
+    <nav className={styles["navigation-menu"]}>
+      <div
+        className={styles["navigation-menu__overlay"]}
+        onClick={toggleMenuClicked}
+      ></div>
+      <button
+        type="button"
+        className={styles["hamburger-menu"]}
+        onClick={toggleMenuClicked}
+      >
+        <span className="material-icons" id="open-icon">
+          menu
+        </span>
+        <span className="material-icons" id="close-icon">
+          close
+        </span>
+      </button>
+      <h1 className={styles["site-identity-logo"]}>Bhautik Golakiya</h1>
+      <section className={styles["navigation-menu__labels"]}>
+        <NavLink
+          className={styles["link"]}
+          to="/"
+          exact
+          activeClassName={styles.active}
+        >
+          Home
+        </NavLink>
+        <NavLink
+          className={styles["link"]}
+          to="/about"
+          activeClassName={styles.active}
+        >
+          About
+        </NavLink>
+        <NavLink
+          className={styles["link"]}
+          to="/resume"
+          activeClassName={styles.active}
+        >
+          Resume
+        </NavLink>
+        <NavLink
+          className={styles["link"]}
+          to="/services"
+          activeClassName={styles.active}
+        >
+          Services
+        </NavLink>
+        <NavLink
+          className={styles["link"]}
+          to="/portfolio"
+          activeClassName={styles.active}
+        >
+          Portfolio
+        </NavLink>
 
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <NavLink
-                className="navLink"
-                activeClassName="active"
-                to="/"
-                exact
-                style={{ transition: "all 0.3s ease-in-out" }}
-              >
-                Home
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                className="navLink"
-                activeClassName="active"
-                to="/about"
-                style={{ transition: "all 0.3s ease-in-out" }}
-              >
-                About
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                className="navLink"
-                activeClassName="active"
-                to="/resume"
-                style={{ transition: "all 0.3s ease-in-out" }}
-              >
-                Resume
-              </NavLink>
-            </li>
-            <li className="dropdown">
-              <NavLink
-                href="#"
-                className="navLink dropdown-toggle"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Services
-              </NavLink>
-              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <NavLink className="dropdown-item" to="/services/service1">
-                    Service 1
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink className="dropdown-item" to="/services/service2">
-                    Service 2
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink className="dropdown-item" to="/services/service3">
-                    Service 3
-                  </NavLink>
-                </li>
-              </ul>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                className="navLink"
-                activeClassName="active"
-                to="/portfolio"
-                style={{ transition: "all 0.3s ease-in-out" }}
-              >
-                Portfolio
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                className="navLink"
-                activeClassName="active"
-                to="/contact"
-                style={{ transition: "all 0.3s ease-in-out" }}
-              >
-                Contact
-              </NavLink>
-            </li>
-          </ul>
-
-          <i className="bi bi-list mobile-nav-toggle"></i>
-        </div>
-      </nav>
-    </header>
+        <NavLink
+          className={styles["link"]}
+          to="/contact"
+          activeClassName={styles.active}
+        >
+          Contact Us
+        </NavLink>
+      </section>
+    </nav>
   );
-}
+};
 
 export default Navbar;

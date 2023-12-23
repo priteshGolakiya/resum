@@ -1,0 +1,85 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: url("../../../public/assets/img/hero-bg.jpg") top right;
+  background-size: cover;
+  position: relative; /* Ensure relative positioning for child elements */
+}
+
+.container {
+  padding-top: 70px;
+  position: relative;
+}
+
+@media (max-width: 992px) {
+  .container {
+    padding-top: 58px;
+  }
+
+  .hero:before {
+    content: "";
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1; /* Ensure the overlay is above the background image */
+  }
+
+  .heroTitle {
+    font-size: 28px;
+    line-height: 36px;
+    z-index: 2; /* Ensure the text is above the overlay */
+  }
+
+  .heroSubtitle {
+    font-size: 18px;
+    line-height: 24px;
+    z-index: 2;
+  }
+}
+
+.btn-about {
+  /* Other styles */
+
+  @media (max-width: 992px) {
+    margin-top: 15px; /* Adjust the margin for smaller screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    background-attachment: fixed;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding-left: 70px;
+  position: relative;
+}
+
+@media (max-width: 992px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px; /* Adjust the value to move the content up */
+    padding-left: 0; /* Reset the left padding if needed */
+  }
+
+  .heroTitle {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .heroSubtitle {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

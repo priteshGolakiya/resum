@@ -1,101 +1,54 @@
+/* Card.module.css */
+
 .card {
   border: 1px solid #e7e9ee;
   border-radius: 10px;
-  position: relative;
-  box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.2);
-  /* background-color: #d7d7d7; */
-  /*position: relative;
-  margin-top: 50px;
-  width: 100%; 
-  max-width: 400px; 
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  transition: 0.3s;*/
+  transition: transform 0.3s ease-in-out;
+  max-width: 99%; /* Ensure the card does not exceed the width of its container */
 }
 
-.card::before {
-  position: absolute;
-  content: "";
-  background: linear-gradient(
-    260.52deg,
-    #1c99fe -4.98%,
-    #7644ff 48.42%,
-    #fd4766 96.9%
-  );
-  border-radius: 10px;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.3s ease-out 0s;
+.card:hover {
+  transform: scale(1.02);
 }
 
-.card:hover::before {
-  transform: rotate(-6.05deg); /* Add scaling effect on hover */
-  visibility: visible;
-  opacity: 1;
-}
-
-.firstCard {
-  border-radius: inherit;
-  display: grid;
-  flex-grow: 1;
-  text-align: center;
-  background: rgb(255, 255, 255);
+.titleContainer {
   padding: 20px;
-  gap: 16px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
-    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-}
-
-.firstCard img {
-  width: 50%;
-  height: auto;
-}
-
-button {
-  background-color: #000;
-  border: 4px solid #181515;
-  padding: 10px 5px;
-  color: #fff;
+  background: #34495e; /* Dark background color */
+  color: #ecf0f1; /* Light text color */
+  border-bottom: 1px solid #2c3e50;
   text-align: center;
-  transition: all 0.4s;
-  font-size: 16px;
-  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
 
-  &:hover {
-    background-color: #fff;
-    color: #000;
-    font-weight: bold;
+.titleContainer h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.contentContainer {
+  padding: 20px;
+}
+
+.contentContainer p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Flexbox for responsiveness */
+@media only screen and (max-width: 768px) {
+  .card {
+    border-radius: 0; /* Remove border radius on small screens */
   }
-}
 
-.tpservices__icon {
-  transition: all 0.3s ease-out 0s;
-  transform: translateY(0); /* Initial position */
-}
+  .titleContainer {
+    border-radius: 0; /* Remove border radius on small screens */
+  }
 
-.firstCard:hover .tpservices__icon {
-  transform: translateY(-5px); /* Move the icon up by 10px */
-}
-
-.flaticonCoding {
-  font-size: 60px;
-  color: #fd4766;
-  /* color: linear-gradient(260.16deg, #1c99fe, #7644ff 52.41%, #fd4766); */
-}
-
-.description {
-  font-size: 2rem;
-}
-
-.firstCard:hover .description p {
-  color: #fd4766;
+  /* Display card in a single column on small screens using flexbox */
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
 }

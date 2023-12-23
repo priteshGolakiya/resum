@@ -164,7 +164,7 @@ body.open .navigation-menu__labels {
 }
 
 /* Links and buttons within navigation menu labels */
-.navigation-menu__labels link {
+.navigation-menu__labels Link {
   font-size: 1.1rem;
   color: #000000;
   background: transparent;
@@ -173,4 +173,13 @@ body.open .navigation-menu__labels {
 
 .navigation-menu__labels button.active {
   color: inherit;
+}
+
+.active {
+  color: #34b7a7;
+  background-color: #000000;
+}
+
+.navigation-menu__labels .active {
+  color: #34b7a7;
 }
