@@ -1,67 +1,43 @@
 import React, { useState } from "react";
-import { portfolioNav } from "../../../data/data";
+import { portfolioNav } from "../../data/data";
+import "../../../styles/home/imageMap/ImageMap.css";
 
 function PortfolioRow() {
-  const [selected, setSelected] = useState(0);
+  const [selected, setSelected] = useState(null);
 
-  console.log(selected);
+  const renderImages = () => {
+    if (selected === null) {
+      // If no category is selected, show all images
+      return portfolioNav.flatMap((item) => item.images);
+    } else {
+      // If a category is selected, filter images based on the category
+      return portfolioNav[selected].images;
+    }
+  };
 
   return (
-    <div
-      style={{
-        padding: "36px",
-        display: "grid",
-        gridTemplateRows: "auto 1fr",
-        gap: "36px",
-      }}
-    >
-      <h2 className="row-title">Portfolio</h2>
-      <nav style={{}}>
-        <ul
-          style={{
-            display: "flex",
-            listStyle: "none",
-            gap: "16px",
-            justifyContent: "center",
-          }}
-        >
-          {portfolioNav.map((item, index) => {
-            return (
-              <li
-                key={index}
-                onClick={() => setSelected(index)}
-                style={{
-                  cursor: "pointer",
-                  color: index === selected ? "#07a5cc" : "black",
-                }}
-              >
-                {item.title}
-              </li>
-            );
-          })}
+    <div className="portfolio-row">
+      <h2 className="row-title">PORTFOLIO</h2>
+      <nav>
+        <ul>
+          {portfolioNav.map((item, index) => (
+            <li
+              key={index}
+              onClick={() => setSelected(index)}
+              className={index === selected ? "selected" : ""}
+            >
+              {item.title}
+            </li>
+          ))}
         </ul>
       </nav>
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
-          gridAutoRows: "240px",
-          gap: "1rem",
-        }}
-      >
-        {portfolioNav[selected].images.map((item, index) => {
-          return (
-            <div style={{ overflow: "hidden" }}>
-              <img
-                key={index}
-                src={item}
-                alt="img"
-                style={{ objectFit: "cover", width: "100%", height: "100%" }}
-              />
-            </div>
-          );
-        })}
-      </div>
+      <ul className={`image-grid ${selected !== null ? "show" : ""}`}>
+        {renderImages().map((item, index) => (
+          <li key={index} className="image-item show">
+            <img src={item} alt={`img-${index}`} />
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
