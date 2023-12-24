@@ -75,7 +75,7 @@ body.open .navigation-menu__overlay {
   display: grid;
   place-items: center;
   width: 64px;
-  height: 64px;
+  height: 30px;
 }
 
 #close-icon {
@@ -95,6 +95,8 @@ body.open .navigation-menu__overlay {
   font-size: 1.3rem;
   background-color: #ffffff;
   color: #27b4b4;
+  text-align: center; /* Center the text */
+  width: 100%; /* Make it full width in mobile view */
 }
 
 .site-identity-logo:hover {
@@ -157,6 +159,17 @@ body.open .navigation-menu__overlay {
     background: transparent;
     flex-direction: row;
     visibility: visible;
+  }
+  .site-identity-logo {
+    margin-left: 150px;
+    padding-left: 150px;
+    text-align: left; /* Reset text alignment for larger screens */
+    width: auto; /* Reset width for larger screens */
+  }
+  .material-icons {
+    padding: 0;
+    background-color: white;
+
   }
 }
 
