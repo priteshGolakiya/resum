@@ -17,9 +17,11 @@ body {
   font-family: Arial, sans-serif;
   color: var(--dark-gray);
 }
+
 .about {
   margin-top: 20px;
 }
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -27,7 +29,6 @@ body {
 }
 
 .containerSelf {
-  display: block;
   text-align: center;
 }
 
@@ -93,7 +94,6 @@ body {
   background-color: var(--white);
   border: 1px solid var(--border);
   border-radius: 4px;
-  /* padding: 20px; */
   max-width: 400px;
   margin: 20px auto;
   font-family: Arial, sans-serif;
@@ -139,10 +139,11 @@ body {
 .personalInformationRight {
   text-align: center;
 }
+
 /* Media query for tablets and mobile devices */
 @media (max-width: 768px) {
-  .containerSecond {
-    padding: 0 15px;
+  .containerSelf {
+    text-align: left;
   }
 
   .img {
@@ -155,16 +156,41 @@ body {
 
   .left-side,
   .right-side {
-    /* margin-left: 0; */
     flex-wrap: wrap;
   }
+
   .personalInformation {
     flex-direction: column;
     flex-wrap: wrap;
-    width: min-content;
+    width: 100%;
     padding: 0;
   }
+
   .details div {
     padding: 10px;
+  }
+}
+
+/* Add these styles to your CSS file */
+.progressBarMain {
+  display: flex;
+  justify-content: center;
+}
+
+.progressBar {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.progressBarHalf {
+  flex: 1;
+  box-sizing: border-box;
+  margin: 8px;
+}
+
+/* Media query for mobile view */
+@media only screen and (max-width: 767px) {
+  .progressBar {
+    flex-direction: column;
   }
 }

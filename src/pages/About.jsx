@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../styles/about/About.module.css";
+import ProgressBar from "../components/common/ProgressBar";
 
 const About = () => {
   return (
@@ -68,6 +69,16 @@ const About = () => {
       </div>
 
       {/* Third section */}
+      <div className="progressBarMain">
+        <div className={styles.progressBar}>
+          <div className={`${styles.progressBarHalf}`}>
+            <ProgressBar title={"HTML"} progress={"100"} />
+          </div>
+          <div className={`${styles.progressBarHalf}`}>
+            <ProgressBar title={"CSS"} progress={"80"} />
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
