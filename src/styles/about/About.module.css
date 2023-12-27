@@ -169,17 +169,31 @@ body {
   .details div {
     padding: 10px;
   }
+
+  .About_containerSelf h1,
+  .About_containerSelf h2 {
+    font-size: 0; /* Hide the headings */
+    letter-spacing: 0;
+    font-weight: 0;
+  }
 }
 
 /* Add these styles to your CSS file */
 .progressBarMain {
   display: flex;
   justify-content: center;
+  margin-top: 20px; /* Add some top margin for spacing */
 }
 
 .progressBar {
   display: flex;
   flex-wrap: wrap;
+  width: 80%; /* Adjust the width based on your preference */
+  max-width: 600px; /* Set a maximum width to control the size */
+  margin: 0 auto; /* Center the progress bar */
+  background-color: #f0f0f0; /* Add a background color for contrast */
+  padding: 20px; /* Add padding for better visual appearance */
+  border-radius: 10px; /* Add rounded corners */
 }
 
 .progressBarHalf {
@@ -192,5 +206,22 @@ body {
 @media only screen and (max-width: 767px) {
   .progressBar {
     flex-direction: column;
+  }
+}
+
+/* Media query for smaller tablets */
+@media only screen and (max-width: 600px) {
+  .site-identity-logo {
+    width: 10rem; /* Adjust the width for smaller tablets */
+  }
+}
+
+/* Media query for larger tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .About_containerSelf h1,
+  .About_containerSelf h2 {
+    font-size: 0; /* Hide the headings for larger tablets */
+    letter-spacing: 0;
+    font-weight: 0;
   }
 }
