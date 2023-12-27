@@ -77,14 +77,6 @@ const Navbar = () => {
         </NavLink>
         <NavLink
           className={styles["link"]}
-          to="/services"
-          activeClassName={styles.active}
-          onClick={() => handleNavLinkClick("/services")}
-        >
-          Services
-        </NavLink>
-        <NavLink
-          className={styles["link"]}
           to="/portfolio"
           activeClassName={styles.active}
           onClick={() => handleNavLinkClick("/portfolio")}

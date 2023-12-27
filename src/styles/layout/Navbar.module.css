@@ -33,13 +33,7 @@ button {
   background: #f9f9f9;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
     rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-}
-
-@media only screen and (min-width: 768px) {
-  .navigation-menu {
-    justify-content: space-between;
-    padding: 0 16px;
-  }
+  padding: 0 16px; /* Padding for larger screens */
 }
 
 /* Overlay for mobile */
@@ -59,12 +53,6 @@ button {
 body.open .navigation-menu__overlay {
   visibility: visible;
   opacity: 1;
-}
-
-@media only screen and (min-width: 768px) {
-  .navigation-menu__overlay {
-    display: none;
-  }
 }
 
 /* Hamburger menu icon */
@@ -95,8 +83,10 @@ body.open .navigation-menu__overlay {
   font-size: 1.3rem;
   background-color: #ffffff;
   color: #27b4b4;
-  text-align: center; /* Center the text */
+  text-align: left; /* Center the text */
   width: 100%; /* Make it full width in mobile view */
+  margin-left: 50px; /* Margin for larger screens */
+  padding-left: 40px; /* Padding for larger screens */
 }
 
 .site-identity-logo:hover {
@@ -127,29 +117,6 @@ body.open .navigation-menu__overlay {
   color: #27b4b4;
 }
 
-/* Modified styles for active class */
-.active {
-  position: relative;
-  color: #fd4766;
-  transform: scale(1.2);
-  transition: all 0.5s ease-in-out;
-}
-
-.active::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  border-bottom: 0.1rem solid rgb(255, 0, 179);
-  width: 0;
-  transition: all 0.3s ease-in-out;
-}
-
-.active:hover::before {
-  width: 100%;
-  transition: width 0.3s ease-in-out;
-}
-
 @media only screen and (min-width: 768px) {
   .navigation-menu__labels {
     position: static;
@@ -161,8 +128,8 @@ body.open .navigation-menu__overlay {
     visibility: visible;
   }
   .site-identity-logo {
-    margin-left: 150px;
-    padding-left: 150px;
+    margin-left: 0; /* Reset margin for larger screens */
+    padding-left: 0; /* Reset padding for larger screens */
     text-align: left; /* Reset text alignment for larger screens */
     width: auto; /* Reset width for larger screens */
   }
@@ -178,22 +145,67 @@ body.open .navigation-menu__labels {
 }
 
 /* Links and buttons within navigation menu labels */
-.navigation-menu__labels Link {
+.navigation-menu__labels a,
+.navigation-menu__labels button {
   font-size: 1.1rem;
   color: #000000;
   background: transparent;
   padding: 0 8px;
 }
 
-.navigation-menu__labels button.active {
+.navigation-menu__labels button.active,
+.navigation-menu__labels a.active {
   color: inherit;
 }
 
+/* Modified styles for active class */
 .active {
-  color: #34b7a7;
-  background-color: #000000;
+  position: relative;
+  color: #fd4766;
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
 }
 
-.navigation-menu__labels .active {
-  color: #34b7a7;
+.active::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 0.2rem solid #34b7a7; /* Change border color for active bar */
+  width: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.active:hover::before {
+  width: 100%;
+  transition: width 0.3s ease-in-out;
+}
+/* Add border below menu items on hover */
+.navigation-menu__labels a:hover {
+  position: relative;
+  color: #fd4766;
+  transform: scale(1.2);
+  transition: all 0.5s ease-in-out;
+}
+/* Links and buttons within navigation menu labels */
+.navigation-menu__labels .link {
+  font-size: 1.1rem;
+  color: #000000;
+  background: transparent;
+  padding: 0 8px;
+  position: relative;
+  transition: opacity 0.3s; /* Add transition property for smooth opacity change */
+
+  /* Add the following styles for hover effect */
+  &:hover {
+    opacity: 0.8; /* Change the opacity on hover */
+  }
+}
+@media only screen and (min-width: 768px) {
+  .site-identity-logo {
+    margin-left: 150px; /* Margin for larger screens */
+    padding-left: 150px; /* Padding for larger screens */
+    text-align: left; /* Reset text alignment for larger screens */
+    width: auto; /* Reset width for larger screens */
+  }
 }

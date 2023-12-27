@@ -1,0 +1,17 @@
+.progressContainer {
+  width: 80%; /* Adjust as needed */
+  margin: 0 auto; /* Center the container */
+}
+
+.progressContainer > progress {
+  width: 100%;
+  accent-color: #62d4f2;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+  .progressContainer {
+    width: 100%;
+    margin-left: 0;
+  }
+}
