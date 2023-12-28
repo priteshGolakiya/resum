@@ -73,8 +73,12 @@ const About = () => {
         <div className={styles.progressBar}>
           <div className={`${styles.progressBarHalf}`}>
             <ProgressBar title={"HTML"} progress={"100"} />
+            <ProgressBar title={"HTML"} progress={"100"} />
+            <ProgressBar title={"HTML"} progress={"100"} />
           </div>
           <div className={`${styles.progressBarHalf}`}>
+            <ProgressBar title={"CSS"} progress={"80"} />
+            <ProgressBar title={"CSS"} progress={"80"} />
             <ProgressBar title={"CSS"} progress={"80"} />
           </div>
         </div>
