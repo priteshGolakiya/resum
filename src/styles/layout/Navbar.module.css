@@ -63,7 +63,8 @@ body.open .navigation-menu__overlay {
   display: grid;
   place-items: center;
   width: 64px;
-  height: 30px;
+  height: 22px;
+  margin-left: 10px;
 }
 
 #close-icon {
@@ -85,8 +86,8 @@ body.open .navigation-menu__overlay {
   color: #27b4b4;
   text-align: left; /* Center the text */
   width: 100%; /* Make it full width in mobile view */
-  /* margin-left: 50px; Margin for larger screens
-  padding-left: 40px; Padding for larger screens */
+  /* margin-left: 50px; */ /* Margin for larger screens
+  padding-left: 40px;*/ /* Padding for larger screens */
 }
 
 .site-identity-logo:hover {
@@ -142,6 +143,7 @@ body.open .navigation-menu__overlay {
   .material-icons {
     padding: 0;
     background-color: white;
+    margin: 2px 0px;
   }
 }
 
