@@ -85,8 +85,8 @@ body.open .navigation-menu__overlay {
   color: #27b4b4;
   text-align: left; /* Center the text */
   width: 100%; /* Make it full width in mobile view */
-  margin-left: 50px; /* Margin for larger screens */
-  padding-left: 40px; /* Padding for larger screens */
+  /* margin-left: 50px; Margin for larger screens
+  padding-left: 40px; Padding for larger screens */
 }
 
 .site-identity-logo:hover {
@@ -118,6 +118,12 @@ body.open .navigation-menu__overlay {
 }
 
 @media only screen and (min-width: 768px) {
+  .Navbar_navigation-menu {
+    height: 55px !important;
+  }
+  .navigation-menu {
+    position: relative;
+  }
   .navigation-menu__labels {
     position: static;
     top: 0;
@@ -204,6 +210,7 @@ body.open .navigation-menu__labels {
 @media only screen and (min-width: 768px) {
   .Navbar_navigation-menu {
     padding: 0;
+    height: 55px !important;
   }
   .site-identity-logo {
     margin-left: 0px; /* Margin for larger screens */

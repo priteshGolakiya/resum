@@ -30,8 +30,8 @@ const About = () => {
             <div className="profile-card">
               <div className="left-side">
                 <div className={styles.containerSelf}>
-                  <h1>Illustrator & UI/UX Designer</h1>
-                  <h2>Personal Information</h2>
+                  <span>Illustrator & UI/UX Designer</span>
+                  <span>Personal Information</span>
                 </div>
                 <div className={styles.personalInformation}>
                   <div

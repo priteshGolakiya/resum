@@ -43,12 +43,13 @@ const Navbar = () => {
           menu
         </span>
       </button>
-      <h1
+      <span
+        style={{ width: "0px !important" }}
         className={styles["site-identity-logo"]}
         onClick={() => handleNavLinkClick("/")}
       >
         Bhautik Golakiya
-      </h1>
+      </span>
       <section className={styles["navigation-menu__labels"]}>
         <NavLink
           className={styles["link"]}
