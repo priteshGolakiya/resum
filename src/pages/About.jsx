@@ -20,7 +20,7 @@ const About = () => {
         </div>
         <div className={styles.content}>
           <div className={styles.containerSelf}>
-            <h2>About</h2>
+            <h2>My Self</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -88,4 +88,3 @@ const About = () => {
 };
 
 export default About;
-  

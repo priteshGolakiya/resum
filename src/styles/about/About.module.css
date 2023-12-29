@@ -227,8 +227,10 @@ body {
   }
   .containerSecond {
     position: relative;
-    margin-top: 10%;
     width: 100%;
+  }
+  .containerSelf > h2 {
+    text-align: center;
   }
   .content {
     margin-top: 150px;
@@ -239,6 +241,15 @@ body {
   }
   .navigation-menu {
     height: 60px;
+  }
+  .containerSelf {
+    margin-left: 20px;
+  }
+  .containerSelf > p {
+    word-wrap: break-word;
+  }
+  .progressBarMain {
+    margin-bottom: 30px;
   }
 }
 
