@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { portfolioNav } from "../../data/data";
 import "../../../styles/home/imageMap/ImageMap.css";
 
 function PortfolioRow() {
-  const [selected, setSelected] = useState(null);
+  const [selected, setSelected] = useState(0);
 
   const renderImages = () => {
     if (selected === null) {
@@ -11,9 +11,17 @@ function PortfolioRow() {
       return portfolioNav.flatMap((item) => item.images);
     } else {
       // If a category is selected, filter images based on the category
-      return portfolioNav[selected].images;
+      return portfolioNav[selected]?.images || [];
     }
   };
+
+  useEffect(() => {
+    // Additional useEffect to handle the default category selection
+    // This will run once when the component mounts
+    // You can set a default category index here
+    // For example, if you want the second category to be selected by default, use setSelected(1)
+    // setSelected(1); // Uncomment and modify as needed
+  }, []); // Empty dependency array to ensure it runs only once when the component mounts
 
   return (
     <div className="portfolio-row">
