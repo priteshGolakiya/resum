@@ -1,4 +1,5 @@
 /* ImageMap.css */
+
 .portfolio-row {
   display: flex;
   flex-direction: column;
@@ -27,15 +28,33 @@ li {
   font-size: 1.125rem;
   color: #555;
   transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
 }
 
 li:hover {
   color: #4b5563;
+  background-color: #f0f0f0;
 }
 
 li.selected {
   color: #10b981;
   font-weight: bold;
+  background-color: #e0f7fa;
+  border: 2px solid black;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .image-grid {
@@ -60,7 +79,8 @@ li.selected {
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
   height: 200px;
 }
 
@@ -73,6 +93,16 @@ li.selected {
 .image-item.show {
   display: flex;
   animation: fadeIn 0.5s ease-in-out;
+}
+
+.image-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.image-item.show:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes fadeIn {
