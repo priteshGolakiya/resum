@@ -71,13 +71,13 @@ const Contact = () => {
       </div>
 
       <div className="right-col">
-        <div className="theme-switch-wrapper">
+        {/* <div className="theme-switch-wrapper">
           <label className="theme-switch" htmlFor="checkbox">
             <input type="checkbox" id="checkbox" onChange={switchTheme} />
             <div className="slider round"></div>
           </label>
           <div className="description">Dark Mode</div>
-        </div>
+        </div> */}
 
         <h1>Contact us</h1>
         <p>
