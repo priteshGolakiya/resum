@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "../styles/home/Home.module.css";
 import { Link } from "react-router-dom";
+import styles from "../styles/home/Home.module.css";
 
 function Home() {
   return (
@@ -15,7 +15,7 @@ function Home() {
           <h2 className={styles.heroSubtitle}>
             I'm a professional illustrator from San Francisco
           </h2>
-          <Link to="/" className={`btn-about ${styles.btnAbout}`}>
+          <Link to="/about" className={`btn-about ${styles.btnAbout}`}>
             About Me
           </Link>
         </div>
