@@ -16,7 +16,7 @@ const About = () => {
       {/* Second section */}
       <div className={styles.containerSecond}>
         <div className={styles.img}>
-          <img src="/assets/img/about.jpg" alt="Illustration of the designer" />
+          <img src="/assets/picofme.jpg" alt="Illustration of the designer" />
         </div>
         <div className={styles.content}>
           <div className={styles.containerSelf}>
