@@ -13,7 +13,7 @@ function Home() {
         >
           <h1 className={styles.heroTitle}>Bhautik Golakiya</h1>
           <h2 className={styles.heroSubtitle}>
-            I'm a professional illustrator from San Francisco
+            I'm a professional UI/UX Designer.
           </h2>
           <Link to="/about" className={`btn-about ${styles.btnAbout}`}>
             About Me

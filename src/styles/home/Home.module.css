@@ -1,14 +1,15 @@
 .hero {
   width: 100%;
   height: 100vh;
-  background: url("../../../public/assets/img/hero-bg.jpg") top right;
-  background-size: cover;
+  background: url("../../../public/assets/back.jpg") top right;
+  background-size: contain;
   position: relative; /* Ensure relative positioning for child elements */
 }
 
 .container {
   padding-top: 70px;
   position: relative;
+  color: rgb(18, 121, 206);
 }
 
 @media (max-width: 992px) {
@@ -131,7 +132,7 @@
     font-size: 14px;
     padding: 10px 20px;
   }
-  .btnAbout{
+  .btnAbout {
     z-index: 20;
   }
 }

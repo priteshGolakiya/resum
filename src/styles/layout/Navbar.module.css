@@ -145,7 +145,6 @@ body.open .navigation-menu__overlay {
     background-color: white;
     margin: 2px 0px;
   }
-
 }
 
 body.open .navigation-menu__labels {
@@ -168,9 +167,10 @@ body.open .navigation-menu__labels {
 }
 
 /* Modified styles for active class */
+/* Modified styles for active class */
 .active {
   position: relative;
-  color: #fd4766;
+  color: rgb(255, 0, 179); /* Change the color to RGB(255, 0, 179) */
   transform: scale(1.2);
   transition: all 0.5s ease-in-out;
 }
@@ -189,13 +189,15 @@ body.open .navigation-menu__labels {
   width: 100%;
   transition: width 0.3s ease-in-out;
 }
+
 /* Add border below menu items on hover */
 .navigation-menu__labels a:hover {
   position: relative;
-  color: #fd4766;
+  color: rgb(255, 0, 179); /* Change the color to RGB(255, 0, 179) */
   transform: scale(1.2);
   transition: all 0.5s ease-in-out;
 }
+
 /* Links and buttons within navigation menu labels */
 .navigation-menu__labels .link {
   font-size: 1.1rem;

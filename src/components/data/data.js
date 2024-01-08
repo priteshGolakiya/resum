@@ -10,8 +10,12 @@ import nuromorphic from "./portfolio/App/nuromorphic.jpg";
 import Taxiapp from "./portfolio/App/Taxiapp.jpg";
 import groceryapp from "./portfolio/App/groceryapp.jpg";
 import gamingdashboard from "./portfolio/Dashboard/gamingdashboard.jpg";
-import dark from "./portfolio/Dashboard/dark.png";
-import trvelblue from "./portfolio/Dashboard/trvelblue.jpg";
+import Dashboard from "./portfolio/Dashboard/Dashboard.png";
+import DarkDashboard from "./portfolio/Dashboard/dark.png";
+import LightDashboard from "./portfolio/Dashboard/LightDashboard.png";
+import ELearningWebsite from "./portfolio/Website/ELearningWebsite.png";
+import CompstripsWebsite from "./portfolio/Website/CompstripsWebsite.jpg";
+import ECommerce from "./portfolio/Website/ECommerce.jpg";
 // Home Page
 
 // About Row
@@ -138,8 +142,36 @@ export const portfolioNav = [
         image: gamingdashboard,
         link: "https://xd.adobe.com/view/548dbfc3-22b7-409b-957c-63407020b4a3-01de/",
       },
-      // { image: dark, link: "/dark-details" },
-      // { image: trvelblue, link: "/trvelblue-details" },
+      {
+        name: "Dashboard",
+        image: Dashboard,
+        link: "https://www.figma.com/file/l4wWC8WS2exFgiOb4ynJyD/Untitled?type=design&node-id=0-1&mode=design&t=UQf1bcqp9Sv92eC1-0",
+      },
+      {
+        name: "Dark-Dashboard",
+        image: DarkDashboard,
+        link: "https://www.figma.com/proto/4aet6xAoOmADbBm2fIBNEB/Dashboard-(Community)?type=design&node-id=21-408&t=uVD8Dzz85fNk7u0Q-1&scaling=min-zoom&page-id=0%3A1",
+      },
+      {
+        name: "Light-Dashboard",
+        image: LightDashboard,
+        link: "",
+      },
+      {
+        name: "E-Learning Website",
+        image: ELearningWebsite,
+        link: "https://www.figma.com/file/I5VHC8wd2a9dDNwu8LsROy/e-learning?type=design&node-id=0-1&mode=design&t=OoXcnHIIvI8oG3ZA-0",
+      },
+      {
+        name: "Compstrips Website",
+        image: CompstripsWebsite,
+        link: "https://www.figma.com/proto/NQijEA518RTGDIijCgzbI3/Website-Mockup?type=design&t=6vIa2XbnNfMbXhzI-1&scaling=min-zoom&page-id=0%3A1&node-id=1-2",
+      },
+      {
+        name: "E-Commerce",
+        image: ECommerce,
+        link: "https://www.figma.com/proto/OYb4tNqo8e9FAphGu1HEYo/eCommerce---Flower-Delivery-website-%7C-UI-%26-UX-%7C-Ui-kit-%7C-Template-(Community)?type=design&node-id=157-972&t=nA8f077fSXhH5dYu-1&scaling=scale-down&page-id=171%3A526&starting-point-node-id=157%3A972&show-proto-sidebar=1&mode=design",
+      },
     ],
   },
   {
@@ -172,13 +204,42 @@ export const portfolioNav = [
         image: gamingdashboard,
         link: "https://xd.adobe.com/view/548dbfc3-22b7-409b-957c-63407020b4a3-01de/",
       },
-      // { image: dark, link: "/dark-details" },
-      // { image: trvelblue, link: "/trvelblue-details" },
+      {
+        name: "Dashboard",
+        image: Dashboard,
+        link: "https://www.figma.com/file/l4wWC8WS2exFgiOb4ynJyD/Untitled?type=design&node-id=0-1&mode=design&t=UQf1bcqp9Sv92eC1-0",
+      },
+      {
+        name: "Dark-Dashboard",
+        image: DarkDashboard,
+        link: "https://www.figma.com/proto/4aet6xAoOmADbBm2fIBNEB/Dashboard-(Community)?type=design&node-id=21-408&t=uVD8Dzz85fNk7u0Q-1&scaling=min-zoom&page-id=0%3A1",
+      },
+      {
+        name: "Light-Dashboard",
+        image: LightDashboard,
+        link: "",
+      },
     ],
   },
   {
     id: 3,
     title: "Webpage",
-    images: [],
+    images: [
+      {
+        name: "E-Learning Website",
+        image: ELearningWebsite,
+        link: "https://www.figma.com/file/I5VHC8wd2a9dDNwu8LsROy/e-learning?type=design&node-id=0-1&mode=design&t=OoXcnHIIvI8oG3ZA-0",
+      },
+      {
+        name: "Compstrips Website",
+        image: CompstripsWebsite,
+        link: "https://www.figma.com/proto/NQijEA518RTGDIijCgzbI3/Website-Mockup?type=design&t=6vIa2XbnNfMbXhzI-1&scaling=min-zoom&page-id=0%3A1&node-id=1-2",
+      },
+      {
+        name: "E-Commerce",
+        image: ECommerce,
+        link: "https://www.figma.com/proto/OYb4tNqo8e9FAphGu1HEYo/eCommerce---Flower-Delivery-website-%7C-UI-%26-UX-%7C-Ui-kit-%7C-Template-(Community)?type=design&node-id=157-972&t=nA8f077fSXhH5dYu-1&scaling=scale-down&page-id=171%3A526&starting-point-node-id=157%3A972&show-proto-sidebar=1&mode=design",
+      },
+    ],
   },
 ];
