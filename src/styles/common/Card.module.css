@@ -6,7 +6,10 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
-  max-width: 99%; /* Ensure the card does not exceed the width of its container */
+  max-width: 97%; /* Ensure the card does not exceed the width of its container */
+  margin-left: 2%;
+  margin-top: 15px;
+  padding: 3px;
 }
 
 .card:hover {
