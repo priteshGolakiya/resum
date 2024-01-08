@@ -9,7 +9,10 @@
 .container {
   padding-top: 70px;
   position: relative;
-  color: rgb(18, 121, 206);
+  background: linear-gradient(to right, #e74c3c, #f39c12, #d35400);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 @media (max-width: 992px) {
@@ -114,6 +117,10 @@
   animation: pulse 1s infinite;
 }
 
+.textAnimation {
+  font-size: 2rem;
+}
+
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -153,5 +160,66 @@
   .heroSubtitle {
     font-size: 18px;
     line-height: 24px;
+  }
+}
+
+.container {
+  padding-top: 70px;
+  position: relative;
+  background: linear-gradient(to right, #e74c3c, #f39c12, #d35400);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@media (max-width: 992px) {
+  .container {
+    padding-top: 58px;
+    background: none;
+    color: rgb(18, 121, 206);
+  }
+
+  .hero:before {
+    /* Remove the overlay for smaller screens */
+    display: none;
+  }
+
+  .heroTitle {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .heroSubtitle {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .btn-about {
+    margin-top: 15px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    background-attachment: fixed;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* Adjust styles for small screens */
+  .btn-about {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+  .btn-about {
+    z-index: 20;
   }
 }

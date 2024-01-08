@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "../styles/home/Home.module.css";
+import { TypeAnimation } from "react-type-animation";
 
 function Home() {
   return (
@@ -13,7 +14,29 @@ function Home() {
         >
           <h1 className={styles.heroTitle}>Bhautik Golakiya</h1>
           <h2 className={styles.heroSubtitle}>
-            I'm a professional UI/UX Designer.
+            <div className="textAnimation"></div>
+            <TypeAnimation
+              sequence={[
+                "I'm",
+                500,
+                "I'm A Professional",
+                500,
+                "I'm A Professional UI/UX",
+                500,
+                "I'm A Professional UI/UX Designer.",
+                500,
+                "I'm A Professional UI/UX",
+                500,
+                "I'm A Professional",
+                500,
+                "I'm ",
+                500,
+                "",
+                500,
+              ]}
+              // style={{ fontSize: "2em" }}
+              repeat={Infinity}
+            />
           </h2>
           <Link to="/about" className={`btn-about ${styles.btnAbout}`}>
             About Me

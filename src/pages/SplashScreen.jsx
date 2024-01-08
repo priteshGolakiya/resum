@@ -36,7 +36,7 @@ function SplashScreen({ onSplashComplete }) {
         }
         setAnimationComplete(true);
         onSplashComplete();
-      }, 3000);
+      }, 3500);
     };
 
     startAnimations();
