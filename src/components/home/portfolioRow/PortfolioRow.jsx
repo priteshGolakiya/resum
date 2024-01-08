@@ -7,21 +7,16 @@ function PortfolioRow() {
 
   const renderImages = () => {
     if (selected === null) {
-      // If no category is selected, show all images
       return portfolioNav.flatMap((item) => item.images);
     } else {
-      // If a category is selected, filter images based on the category
       return portfolioNav[selected]?.images || [];
     }
   };
 
-  useEffect(() => {
-    // Additional useEffect to handle the default category selection
-    // This will run once when the component mounts
-    // You can set a default category index here
-    // For example, if you want the second category to be selected by default, use setSelected(1)
-    // setSelected(1); // Uncomment and modify as needed
-  }, []); // Empty dependency array to ensure it runs only once when the component mounts
+  const handleImageClick = (link) => {
+    // Redirect to the specified link when an image is clicked
+    window.location.href = link;
+  };
 
   return (
     <div className="portfolio-row">
@@ -42,12 +37,16 @@ function PortfolioRow() {
       <ul className={`image-grid ${selected !== null ? "show" : ""}`}>
         {renderImages().map((item, index) => (
           <li key={index} className="image-item show">
-            <img src={item} alt={`img-${index}`} />
+            <img
+              src={item.image}
+              alt={`img-${index}`}
+              onClick={() => handleImageClick(item.link)}
+            />
+            <p>{item.name}</p>
           </li>
         ))}
       </ul>
     </div>
   );
 }
-
 export default PortfolioRow;

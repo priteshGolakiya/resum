@@ -6,6 +6,12 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import nuromorphic from "./portfolio/App/nuromorphic.jpg";
+import Taxiapp from "./portfolio/App/Taxiapp.jpg";
+import groceryapp from "./portfolio/App/groceryapp.jpg";
+import gamingdashboard from "./portfolio/Dashboard/gamingdashboard.jpg";
+import dark from "./portfolio/Dashboard/dark.png";
+import trvelblue from "./portfolio/Dashboard/trvelblue.jpg";
 // Home Page
 
 // About Row
@@ -109,123 +115,70 @@ export const experience = [
 
 export const portfolioNav = [
   {
-    id: 0, // Updated ID for "All" option
+    id: 0,
     title: "All",
     images: [
-      "https://images.unsplash.com/photo-1698413536557-8e4119606fe3?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1682687982423-295485af248a?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1698512316167-4b5e039f1f02?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://plus.unsplash.com/premium_photo-1696879451615-703810a5cad5?auto=format&fit=crop&q=80&w=1376&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1683009427051-00a2fe827a2c?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1698413536557-8e4119606fe3?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1682687982423-295485af248a?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1698512316167-4b5e039f1f02?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://plus.unsplash.com/premium_photo-1696879451615-703810a5cad5?auto=format&fit=crop&q=80&w=1376&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1683009427051-00a2fe827a2c?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://plus.unsplash.com/premium_photo-1696879451615-703810a5cad5?auto=format&fit=crop&q=80&w=1376&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1682687982423-295485af248a?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1698512316167-4b5e039f1f02?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1698413536557-8e4119606fe3?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1683009427051-00a2fe827a2c?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1683009427051-00a2fe827a2c?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1682687982423-295485af248a?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1698512316167-4b5e039f1f02?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://plus.unsplash.com/premium_photo-1696879451615-703810a5cad5?auto=format&fit=crop&q=80&w=1376&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1698413536557-8e4119606fe3?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      {
+        name: "Nuromorphic",
+        image: nuromorphic,
+        link: "https://www.figma.com/proto/kUQZTa5fI7UGhFGfA7p41D/Neuromorphic-Travel-App?node-id=0-241&scaling=scale-down",
+      },
+      {
+        image: Taxiapp,
+        link: "https://www.figma.com/proto/1MiBFOaiyPnTS1vRiFZ7up/Untitled?node-id=1-1562&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A1532",
+        name: "Taxiapp",
+      },
+      {
+        name: "Grocery App",
+        image: groceryapp,
+        link: "https://www.figma.com/proto/Flw0jmLdT8hVdHugpdP8p4/fruits-shoping?scaling=scale-down&page-id=0%3A1&starting-point-node-id=90%3A0&node-id=90-0",
+      },
+      {
+        name: "Gaming Dashboard",
+        image: gamingdashboard,
+        link: "https://xd.adobe.com/view/548dbfc3-22b7-409b-957c-63407020b4a3-01de/",
+      },
+      // { image: dark, link: "/dark-details" },
+      // { image: trvelblue, link: "/trvelblue-details" },
     ],
   },
   {
     id: 1,
-    title: "New",
+    title: "Application",
     images: [
-      "https://images.unsplash.com/photo-1698413536557-8e4119606fe3?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1682687982423-295485af248a?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1698512316167-4b5e039f1f02?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://plus.unsplash.com/premium_photo-1696879451615-703810a5cad5?auto=format&fit=crop&q=80&w=1376&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1683009427051-00a2fe827a2c?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      {
+        name: "Nuromorphic",
+        image: nuromorphic,
+        link: "https://www.figma.com/proto/kUQZTa5fI7UGhFGfA7p41D/Neuromorphic-Travel-App?node-id=0-241&scaling=scale-down",
+      },
+      {
+        image: Taxiapp,
+        link: "https://www.figma.com/proto/1MiBFOaiyPnTS1vRiFZ7up/Untitled?node-id=1-1562&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A1532",
+        name: "Taxiapp",
+      },
+      {
+        name: "Grocery App",
+        image: groceryapp,
+        link: "https://www.figma.com/proto/Flw0jmLdT8hVdHugpdP8p4/fruits-shoping?scaling=scale-down&page-id=0%3A1&starting-point-node-id=90%3A0&node-id=90-0",
+      },
     ],
   },
   {
     id: 2,
-    title: "Advertising",
+    title: "Dashboard",
     images: [
-      "https://images.unsplash.com/photo-1698413536557-8e4119606fe3?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1682687982423-295485af248a?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1698512316167-4b5e039f1f02?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://plus.unsplash.com/premium_photo-1696879451615-703810a5cad5?auto=format&fit=crop&q=80&w=1376&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1683009427051-00a2fe827a2c?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      {
+        name: "Gaming Dashboard",
+        image: gamingdashboard,
+        link: "https://xd.adobe.com/view/548dbfc3-22b7-409b-957c-63407020b4a3-01de/",
+      },
+      // { image: dark, link: "/dark-details" },
+      // { image: trvelblue, link: "/trvelblue-details" },
     ],
   },
   {
     id: 3,
-    title: "Branding",
-    images: [
-      "https://plus.unsplash.com/premium_photo-1696879451615-703810a5cad5?auto=format&fit=crop&q=80&w=1376&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1682687982423-295485af248a?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1698512316167-4b5e039f1f02?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1698413536557-8e4119606fe3?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1683009427051-00a2fe827a2c?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    ],
-  },
-  {
-    id: 4,
-    title: "Web",
-    images: [
-      "https://images.unsplash.com/photo-1683009427051-00a2fe827a2c?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1682687982423-295485af248a?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1698512316167-4b5e039f1f02?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://plus.unsplash.com/premium_photo-1696879451615-703810a5cad5?auto=format&fit=crop&q=80&w=1376&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1698413536557-8e4119606fe3?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    ],
+    title: "Webpage",
+    images: [],
   },
 ];
-
-// export const portfolioNav = [
-//   {
-//     id: 1,
-//     title: "New",
-//     images: [
-//       "https://source.unsplash.com/random",
-//       "https://images.unsplash.com/photo-1698512316167-4b5e039f1f02?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-//       "https://plus.unsplash.com/premium_photo-1696879451615-703810a5cad5?auto=format&fit=crop&q=80&w=1376&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-//       "https://images.unsplash.com/photo-1698413536557-8e4119606fe3?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-//       "https://images.unsplash.com/photo-1683009427051-00a2fe827a2c?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-//       "https://images.unsplash.com/photo-1698423847515-0436afa8de9f?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-//     ],
-//   },
-//   {
-//     id: 2,
-//     title: "Advertising",
-//     images: [
-//       "https://plus.unsplash.com/premium_photo-1696879451615-703810a5cad5?auto=format&fit=crop&q=80&w=1376&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-//       "https://images.unsplash.com/photo-1682687982423-295485af248a?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-//       "https://images.unsplash.com/photo-1698512316167-4b5e039f1f02?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-//       "https://images.unsplash.com/photo-1698413536557-8e4119606fe3?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-//       "https://images.unsplash.com/photo-1683009427051-00a2fe827a2c?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-//     ],
-//   },
-//   {
-//     id: 3,
-//     title: "Branding",
-//     images: [
-//       "https://images.unsplash.com/photo-1683009427051-00a2fe827a2c?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-//       "https://images.unsplash.com/photo-1682687982423-295485af248a?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-//       "https://images.unsplash.com/photo-1698512316167-4b5e039f1f02?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-//       "https://plus.unsplash.com/premium_photo-1696879451615-703810a5cad5?auto=format&fit=crop&q=80&w=1376&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-//       "https://images.unsplash.com/photo-1698413536557-8e4119606fe3?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-//     ],
-//   },
-//   {
-//     id: 4,
-//     title: "Web",
-//     images: [
-//       "https://images.unsplash.com/photo-1698413536557-8e4119606fe3?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-//       "https://images.unsplash.com/photo-1682687982423-295485af248a?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-//       "https://images.unsplash.com/photo-1698512316167-4b5e039f1f02?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-//       "https://plus.unsplash.com/premium_photo-1696879451615-703810a5cad5?auto=format&fit=crop&q=80&w=1376&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-//       "https://images.unsplash.com/photo-1683009427051-00a2fe827a2c?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-//     ],
-//   },
-// ];
-
-// About Page
